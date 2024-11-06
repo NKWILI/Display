@@ -1,0 +1,56 @@
+/* Display Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.content-display {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.content-display h1, .content-display h2, .content-display h3 {
+    color: #333;
+}
+
+.content-display p {
+    color: #555;
+}
+
+.content-display strong {
+    font-weight: bold;
+}
+
+.content-display em {
+    font-style: italic;
+}
+
+.content-display a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.content-display a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .content-display {
+        padding: 15px;
+    }
+}

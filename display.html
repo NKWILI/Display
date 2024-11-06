@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Content Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-display" id="contentDisplay"></div>
+
+    <script>
+        // Function to decode and display the content from the URL
+        function displayContent() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const encodedContent = urlParams.get('data');
+            
+            if (encodedContent) {
+                const decodedContent = decodeURIComponent(encodedContent);
+                document.getElementById("contentDisplay").innerHTML = decodedContent;
+            } else {
+                document.getElementById("contentDisplay").innerText = "No content to display.";
+            }
+        }
+        
+        // Call displayContent when the page loads
+        window.onload = displayContent;
+    </script>
+</body>
+</html>
